@@ -4,4 +4,5 @@ def index(request):
     return render(request, 'index.html')
 
 def search(request):
-    return render(request, 'index.html', request.POST.dict())
+    print(request.POST.dict())
+    return render(request, 'search.html', request.POST.dict())

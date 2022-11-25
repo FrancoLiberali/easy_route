@@ -200,7 +200,7 @@ section {
 }
 
 .section_padding {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .section_padding_top {
@@ -515,7 +515,7 @@ section {
 /* --Banner Area-- */
 #home_one_banner {
     background-image: url("../img/banner/bg.png");
-    padding: 370px 0 280px 0;
+    padding: 250px 0 250px 0;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
