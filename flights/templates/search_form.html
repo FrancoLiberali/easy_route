@@ -1,33 +1,40 @@
 <form action="{% url 'search' %}" method="post">
     {% csrf_token %}
     <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="flight_Search_boxed">
                 <p>Destination</p>
-                <input name="destination" type="text" placeholder="Where are you going?">
-                <span>Where are you going?</span>
+                <input autocomplete="off" name="destination" type="text" value="{{ destination }}">
+                <span>Where are you going? (Europe, Eastern Europe, France, Brussels)</span>
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
             <div class="form_search_date">
                 <div class="flight_Search_boxed date_flex_area">
                     <div class="Journey_date">
-                        <p>Journey date</p>
-                        <input name="from" type="date" value="2022-05-03">
-                        <span>Thursday</span>
+                        <p>From</p>
+                        <input name="from" type="date" value="{{ from }}">
+                        <span>When are you available?</span>
                     </div>
                     <div class="Journey_date">
-                        <p>Return date</p>
-                        <input name="to" type="date" value="2022-05-05">
-                        <span>Thursday</span>
+                        <p>To</p>
+                        <input name="to" type="date" value="{{ to }}">
+                        <span></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+            <div class="flight_Search_boxed">
+                <p>Duration</p>
+                <input name="duration" type="number" value="{{ duration }}">
+                <span>How many days?</span>
+            </div>
+        </div>
+        <div class="col-lg-2  col-md-6 col-sm-12 col-12">
             <div class="flight_Search_boxed dropdown_passenger_area">
-                <p>Passenger </p>
-                <input name="passenger" type="number" value="1">
+                <p>Passenger</p>
+                <input name="passenger" type="number" value="{{ passenger }}">
                 <span>How many are you?</span>
             </div>
         </div>
