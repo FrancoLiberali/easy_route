@@ -1,0 +1,200 @@
+{% load static %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="flight_search_result_wrapper">
+            <div class="flight_search_item_wrappper">
+                <div class="flight_search_items" style="align-items: stretch">
+                    <div class="multi_city_flight_lists col-lg-10">
+                        <div class="flight_multis_area_wrapper" style="justify-content: start; flex-wrap: wrap; padding-right: 15px">
+                            {% for place in route.places %}
+                                {% include "place.html" with place=place %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="flight_search_right col-lg-2">
+                        <h2>{{ route.price }}</h2>
+                        <a href="https://andit.co/projects/html/and-tour/demo/flight-booking-submission.html" class="btn btn_theme btn_sm">Book
+                            now</a>
+                        <h6 data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                            aria-expanded="false" aria-controls="collapseExample">Show more <i
+                                class="fas fa-chevron-down"></i></h6>
+                    </div>
+                </div>
+                <div class="flight_policy_refund collapse" id="collapseExample">
+                    <div class="flight_show_down_wrapper">
+                        <div class="flight-shoe_dow_item">
+                            <div class="airline-details">
+                                <div class="img"><img src="{% static 'img/icon/bg.png' %}" alt="img"></div>
+                                <span class="airlineName fw-500">Biman Bangladesh Airlines &nbsp;
+                                    BG435</span>
+                                <span class="flightNumber">BOEING 737-800 - 738</span>
+                            </div>
+                            <div class="flight_inner_show_component">
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                                <div class="flight_duration">
+                                    <div class="arrow_right"></div>
+                                    <span>01h 15m</span>
+                                </div>
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight_refund_policy">
+                            <div class="TabPanelInner flex_widht_less">
+                                <h4>Refund Policy</h4>
+                                <p class="fz12">1. Refund and Date Change are done as per the
+                                    following policies.</p>
+                                <p class="fz12">2. Refund Amount= Refund Charge (as per airline
+                                    policy + ShareTrip Convenience Fee). </p>
+                                <p class="fz12">3. Date Change Amount= Date Change Fee (as per
+                                    Airline Policy + ShareTrip Convenience Fee).</p>
+                            </div>
+                            <div class="TabPanelInner">
+                                <h4>Baggage</h4>
+                                <div class="flight_info_taable">
+                                    <h3>DAC-SPD</h3>
+                                    <p><span>20KG /</span> person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight_show_down_wrapper">
+                        <div class="flight-shoe_dow_item">
+                            <div class="airline-details">
+                                <div class="img"><img src="{% static 'img/icon/bg.png' %}" alt="img"></div>
+                                <span class="airlineName fw-500">Biman Bangladesh Airlines &nbsp;
+                                    BG435</span>
+                                <span class="flightNumber">BOEING 737-800 - 738</span>
+                            </div>
+                            <div class="flight_inner_show_component">
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                                <div class="flight_duration">
+                                    <div class="arrow_right"></div>
+                                    <span>01h 15m</span>
+                                </div>
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight_refund_policy">
+                            <div class="TabPanelInner flex_widht_less">
+                                <h4>Refund Policy</h4>
+                                <p class="fz12">1. Refund and Date Change are done as per the
+                                    following policies.</p>
+                                <p class="fz12">2. Refund Amount= Refund Charge (as per airline
+                                    policy + ShareTrip Convenience Fee). </p>
+                                <p class="fz12">3. Date Change Amount= Date Change Fee (as per
+                                    Airline Policy + ShareTrip Convenience Fee).</p>
+                            </div>
+                            <div class="TabPanelInner">
+                                <h4>Baggage</h4>
+                                <div class="flight_info_taable">
+                                    <h3>DAC-SPD</h3>
+                                    <p><span>20KG /</span> person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight_show_down_wrapper">
+                        <div class="flight-shoe_dow_item">
+                            <div class="airline-details">
+                                <div class="img"><img src="{% static 'img/icon/bg.png' %}" alt="img"></div>
+                                <span class="airlineName fw-500">Biman Bangladesh Airlines &nbsp;
+                                    BG435</span>
+                                <span class="flightNumber">BOEING 737-800 - 738</span>
+                            </div>
+                            <div class="flight_inner_show_component">
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                                <div class="flight_duration">
+                                    <div class="arrow_right"></div>
+                                    <span>01h 15m</span>
+                                </div>
+                                <div class="flight_det_wrapper">
+                                    <div class="flight_det">
+                                        <div class="code_time">
+                                            <span class="code">DAC</span>
+                                            <span class="time">15:00</span>
+                                        </div>
+                                        <p class="airport">Hazrat Shahjalal International Airport
+                                        </p>
+                                        <p class="date">7th Jun 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight_refund_policy">
+                            <div class="TabPanelInner flex_widht_less">
+                                <h4>Refund Policy</h4>
+                                <p class="fz12">1. Refund and Date Change are done as per the
+                                    following policies.</p>
+                                <p class="fz12">2. Refund Amount= Refund Charge (as per airline
+                                    policy + ShareTrip Convenience Fee). </p>
+                                <p class="fz12">3. Date Change Amount= Date Change Fee (as per
+                                    Airline Policy + ShareTrip Convenience Fee).</p>
+                            </div>
+                            <div class="TabPanelInner">
+                                <h4>Baggage</h4>
+                                <div class="flight_info_taable">
+                                    <h3>DAC-SPD</h3>
+                                    <p><span>20KG /</span> person</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load_more_flight">
+            <button class="btn btn_md"><i class="fas fa-spinner"></i> Load more..</button>
+        </div>
+    </div>
+</div>

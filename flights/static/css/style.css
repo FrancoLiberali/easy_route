@@ -4543,13 +4543,13 @@ textarea {
 .flight_search_left {
     display: flex;
     align-items: center;
-    padding: 0 0px 0 23px;
+    padding: 0 0px 0 25px;
 }
 
 .flight_search_middel {
     display: flex;
     align-items: center;
-    padding-left: 47px;
+    padding-left: 25px;
 }
 
 .flight_multis_area_wrapper {
@@ -4558,7 +4558,7 @@ textarea {
 }
 
 .flight_search_destination {
-    padding-left: 33px;
+    /* padding-left: 33px; */
 }
 
 .flight_search_destination p {
@@ -4585,8 +4585,9 @@ textarea {
 }
 
 .flight_right_arrow img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
     border-radius: 50%;
     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.1);
 }

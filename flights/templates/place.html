@@ -1,0 +1,24 @@
+{% load static %}
+
+{% comment %} <div class="col-lg-6"> {% endcomment %}
+<div class="flight_search_left">
+    <div class="flight_search_destination">
+        {% if place.duration %}
+            <p>{{ place.duration }} days</p>
+        {% else %}
+            <p></p>
+        {% endif %}
+        <h3>{{ place.city_name }} </h3>
+        {% comment %} <h6>{{ place.start_day }} to {{ place.next_travel.day }}</h6> {% endcomment %}
+    </div>
+</div>
+{% if place.next_travel %}
+    <div class="flight_search_middel">
+        <div class="flight_right_arrow">
+            <img src="{% static 'img/icon/right_arrow.png' %}" alt="icon">
+            <h6>{{ place.next_travel.day }} </h6>
+            <p>{{ place.next_travel.duration }}</p>
+        </div>
+    </div>
+{% endif %}
+{% comment %} </div> {% endcomment %}
