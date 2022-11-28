@@ -1,0 +1,66 @@
+{% load static %}
+
+{% if place.next_travel %}
+    <div class="flight_show_down_wrapper">
+        <div class="flight-shoe_dow_item">
+            <div class="airline-details">
+                <div class="img"><img src="{% static 'img/icon/ryanair.png' %}" alt="img"></div>
+                <span class="airlineName fw-500">Ryanair &nbsp;
+                    BG435</span>
+                <span class="flightNumber">BOEING 737-800 - 738</span>
+            </div>
+            <div class="flight_inner_show_component">
+                <div class="flight_det_wrapper">
+                    <div class="flight_det">
+                        <div class="code_time">
+                            <span class="code">{{ place.next_travel.origin_acronym }}</span>
+                            <span class="time">15:00</span>
+                        </div>
+                        <p class="airport">{{ place.next_travel.origin }}
+                        </p>
+                        <p class="date">{{ place.next_travel.day }}</p>
+                    </div>
+                </div>
+                <div class="flight_duration">
+                    {% if place.next_travel.transport_type == "BUS" %}
+                        <div class="arrow_right" style="background-image: url({% static 'img/icon/plane-right-blue.png' %})"></div>
+                    {% elif place.next_travel.transport_type == "TRAIN" %}
+                        <div class="arrow_right" style="background-image: url({% static 'img/icon/plane-right-blue.png' %})"></div>
+                    {% elif place.next_travel.transport_type == "AIRPLANE" %}
+                        <div class="arrow_right" style="background-image: url({% static 'img/icon/plane-right-blue.png' %})"></div>
+                    {% endif %}
+                    <span>01h 15m</span>
+                </div>
+                <div class="flight_det_wrapper">
+                    <div class="flight_det">
+                        <div class="code_time">
+                            <span class="code">{{ place.next_travel.destination_acronym }}</span>
+                            <span class="time">15:00</span>
+                        </div>
+                        <p class="airport">{{ place.next_travel.destination }}
+                        </p>
+                        <p class="date">{{ place.next_travel.day }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flight_refund_policy">
+            <div class="TabPanelInner flex_widht_less">
+                <h4>Refund Policy</h4>
+                <p class="fz12">1. Refund and Date Change are done as per the
+                    following policies.</p>
+                <p class="fz12">2. Refund Amount= Refund Charge (as per airline
+                    policy + ShareTrip Convenience Fee). </p>
+                <p class="fz12">3. Date Change Amount= Date Change Fee (as per
+                    Airline Policy + ShareTrip Convenience Fee).</p>
+            </div>
+            <div class="TabPanelInner">
+                <h4>Baggage</h4>
+                <div class="flight_info_taable">
+                    <h3>Carry-on</h3>
+                    <p><span>20KG /</span> person</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

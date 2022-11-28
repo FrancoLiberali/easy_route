@@ -4533,7 +4533,14 @@ textarea {
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+}
+
+.flight_search_items .route_info {
+    padding-left: 15px;
+    padding-top: 5px;
+    color: var(--main-color);
+    font-size: 14px;
 }
 
 .flight_search_item_wrappper {
@@ -4554,11 +4561,9 @@ textarea {
 
 .flight_multis_area_wrapper {
     display: flex;
-    justify-content: space-between;
-}
-
-.flight_search_destination {
-    /* padding-left: 33px; */
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-right: 15px
 }
 
 .flight_search_destination p {
@@ -4738,7 +4743,6 @@ textarea {
 .flight_inner_show_component .arrow_right {
     flex-basis: 88px;
     margin: 4px 1rem 0px;
-    background-image: url('../img/icon/plane-right-blue.png');
     background-repeat: no-repeat;
     background-position: 50% center;
     text-align: center;
