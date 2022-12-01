@@ -514,7 +514,7 @@ section {
 
 /* --Banner Area-- */
 #home_one_banner {
-    background-image: url("../img/banner/bg.png");
+    background-image: url("../img/banner/bg-2.png");
     padding: 250px 0 250px 0;
     position: relative;
     background-position: center;
@@ -533,6 +533,8 @@ section {
 .banner_one_text h3 {
     color: var(--white-color);
     padding-top: 13px;
+    font-weight: 400;
+    -webkit-text-stroke: 0.3px var(--main-color);;
 }
 
 /* --Theme Search Form-- */
